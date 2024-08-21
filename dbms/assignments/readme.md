@@ -2,7 +2,7 @@
 here you will find all the solutions to the dbms assignments before I submit them to classroom
 
 # question 5 of assignment 2
-'''sql
+'''
 
 declare
     jobs varchar(20) ; 
