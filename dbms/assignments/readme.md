@@ -3,6 +3,7 @@ here you will find all the solutions to the dbms assignments before I submit the
 
 # question 5 of assignment 2
 '''sql
+
 declare
     jobs varchar(20) ; 
 CURSOR C_EMP IS
