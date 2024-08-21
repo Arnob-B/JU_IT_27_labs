@@ -2,7 +2,7 @@
 here you will find all the solutions to the dbms assignments before I submit them to classroom
 
 # question 5 of assignment 2
-'''cmd
+```cmd
 declare
     jobs varchar(20) ; 
 CURSOR C_EMP IS
@@ -21,4 +21,5 @@ LOOP
 	END LOOP;
 CLOSE C_EMP;
 END;
-'''
+```
+
