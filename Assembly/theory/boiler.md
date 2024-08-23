@@ -8,6 +8,7 @@ There are different methods to write the boiler Plate
 
 ### One of the Easiest ways
 ```asm
+.dosseg
 .model small
 
 .code
@@ -29,3 +30,5 @@ end main
 end
 
 ```
+# dosseg
+this command enables the segment to be called in any random order
