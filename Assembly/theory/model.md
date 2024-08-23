@@ -15,7 +15,7 @@ each segment :-> 64kb
     data: one segment
 ## 3. compact
     code: in one segment 
-    data: in one segment
+    data: more than one segment
 ## 4. large
     code & data: in one segment 
 ## 5. huge
