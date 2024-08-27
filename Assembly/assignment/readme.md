@@ -34,6 +34,7 @@ Write an Assembly language Program to generate the first ten elements of this se
 3. Write an Assembly Language Program to arrange a series of 7 data bytes stored from DS: 0030H in ascending order.
 4. Write an Assembly Language Program to arrange a series of 7 sixteen-bits data stored from DS: 0030H in descending order.
 5. Write an Assembly Language program to find the square of a number stored in DS: 0030H using LOOK-UP table. Assume that the LOOK-UP table is stored from DS: 0040H that contains the square of the numbers 0 to 9. Store the square value in DS: 0050H.
+
 |address|values|
 |---|---|
 |DS:0100H | 00| 
