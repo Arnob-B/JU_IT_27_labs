@@ -26,5 +26,5 @@
 7. Write an Assembly Language Program to convert an 8-bit number stored in DS: 0030H into its equivalent ASCII value. Store the converted code from DS: 0050H.
 8. Write an Assembly Language Program to find out the square root of a number stored in DS: 0030H. Store the result in DS: 0040H.
 9. Fibonacci series is defined as:
-> F(i) = F(i-1) + F(i-2); for all i >2 with F(1) = F(2) = 1
+> F(i) = F(i-1) + F(i-2); for all i >2 with F(1) = F(2) = 1 <br>
 Write an Assembly language Program to generate the first ten elements of this sequence and store them from DS: 0030H.
