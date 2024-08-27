@@ -26,5 +26,27 @@
 7. Write an Assembly Language Program to convert an 8-bit number stored in DS: 0030H into its equivalent ASCII value. Store the converted code from DS: 0050H.
 8. Write an Assembly Language Program to find out the square root of a number stored in DS: 0030H. Store the result in DS: 0040H.
 9. Fibonacci series is defined as:
-> F(i) = F(i-1) + F(i-2); for all i >2 with F(1) = F(2) = 1 <br>
+> F(i) = F(i-1) + F(i-2); for all i >2 with F(1) = F(2) = 1
+
 Write an Assembly language Program to generate the first ten elements of this sequence and store them from DS: 0030H.
+
+# Assignment 3
+1. Write an Assembly Language Program to find the smallest number from a series of seven data bytes stored from DS: 0030H. Store the smallest number in DS: 0040H.
+2. Write an Assembly Language Program to find the largest number from a series of 7 sixteen-bit numbers stored from DS: 0030H. Store the largest number in DS: 0040H.
+3. Write an Assembly Language Program to arrange a series of 7 data bytes stored from DS: 0030H in ascending order.
+4. Write an Assembly Language Program to arrange a series of 7 sixteen-bits data stored from DS: 0030H in descending order.
+5. Write an Assembly Language program to find the square of a number stored in DS: 0030H using LOOK-UP table. Assume that the LOOK-UP table is stored from DS: 0040H that contains the square of the numbers 0 to 9. Store the square value in DS: 0050H.
+|---|---|
+|DS:0100H | 00| 
+|DS:0101H | 01| 
+|DS:0102H | 04| 
+|DS:0103H | 09| 
+|DS:0104H | 16| 
+|DS:0105H | 25| 
+|DS:0106H | 36| 
+|DS:0107H | 49| 
+|DS:0108H | 64| 
+|DS:0109H | 81| 
+
+
+
