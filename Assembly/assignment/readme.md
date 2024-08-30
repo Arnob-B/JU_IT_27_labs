@@ -3,11 +3,11 @@
 ### Assembly and Machine Language Lab
 # Assignment 1
 
-1. Write an Assembly Language Program to add two sixteen-bit numbers. The numbers are stored in DS: 0030H and DS: 0040H. Store the result in DS: 0050H, DS: 0051H, and DS: 0052H.[soln](./assignment1/q1)
-2. Write an Assembly Language Program to subtract an 8-bit numbers stored in DS: 0030H from a number stored in DS: 0040H using 2’s complement method. Store the result in DS: 0050H, and DS: 0051H.[soln](./assignment1/q2)
-3. Write a program to transfer a block of 8 data bytes from memory location DS: 0030H to DS: 0040H.[soln](./assignment1/q3)
-4. Write an 8086 Assembly Language Program for the addition of 7 eight-bit numbers stored from DS: 0030H. Store the result in DS: 0050H and DS: 0051H.[soln](./assignment1/q4)
-5. Write an 8086 Assembly Language Program for the addition of 5 sixteen-bit numbers stored from DS: 0030H. Store the result in DS: 0050H, DS: 0051H, DS: 0052H.[soln](./assignment1/q5)
+1. Write an Assembly Language Program to add two sixteen-bit numbers. The numbers are stored in DS: 0030H and DS: 0040H. Store the result in DS: 0050H, DS: 0051H, and DS: 0052H.[soln](./assignment1/q1.asm)
+2. Write an Assembly Language Program to subtract an 8-bit numbers stored in DS: 0030H from a number stored in DS: 0040H using 2’s complement method. Store the result in DS: 0050H, and DS: 0051H.[soln](./assignment1/q2.asm)
+3. Write a program to transfer a block of 8 data bytes from memory location DS: 0030H to DS: 0040H.[soln](./assignment1/q3.asm)
+4. Write an 8086 Assembly Language Program for the addition of 7 eight-bit numbers stored from DS: 0030H. Store the result in DS: 0050H and DS: 0051H.[soln](./assignment1/q4.asm)
+5. Write an 8086 Assembly Language Program for the addition of 5 sixteen-bit numbers stored from DS: 0030H. Store the result in DS: 0050H, DS: 0051H, DS: 0052H.[soln](./assignment1/q5.asm)
 6. Write an Assembly Language Program for the addition of five BCD numbers stored from DS: 0030H. Store the result in DS: 0040H and DS: 0041H. 
 7. Write an Assembly Language Program to subtract a BCD number stored in DS: 0040H from a BCD number stored in DS: 0050H. Store the result in DS: 0060H and DS: 0061H. 
 8. Write an Assembly Language Program to multiply two eight bit number stored in DS: 0040H and DS: 0050H. Store the result from DS: 0060H.
