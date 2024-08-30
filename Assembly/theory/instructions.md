@@ -6,9 +6,21 @@ operand :-> memory variable,registers, constants
 1. both source and dest cannot be memory var at the same time 
 2. size of both operand should be same
 
-> in masm mov [si], 00h gives operand must hv same size error
-so its better to use memory and register ie mov [si] , bl
+### moving values directly to data segment
+mov [si] 1234h;
+lower byte is 34 and higher byte is 12
+let us say si is pointing to 0030h;
+0030h will store 34
+0031h will store 12
 
+> what i hv tested is that you can't move 1 byte data direclty into memory without using 8 bit register
+ie
+```asm
+mov [si] , 23h;
+mov [si], 0023h;
+mov [si], 0000h
+```
+are all invalid
 
 ## moving in memory
 mov memvar, 23h;
@@ -22,3 +34,10 @@ xch <operand1> <operand2>
 operand :-> memory variable,registers, constants
 1. both source and dest cannot be memory var at the same time 
 2. size of both operand should be same
+
+
+
+# Add
+while adding two 16 bit register or (register and memory pair)
+the carry in the half 8 bit is autmatically addjusted 
+for ex :-> if there is carry generated in B7 then it will be added to B8
