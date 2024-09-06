@@ -45,4 +45,16 @@ for ex :-> if there is carry generated in B7 then it will be added to B8
 
 
 # MUL
+```asm
+mul <operand>
+```
+operand : should be 8bit or 16bit register (memory is not allowed)
+#### 8bit register as operand 
+mul bl 
+bl * al -> stores in AX register
 
+#### 16bit register as operand
+mul bx 
+bx * ax -> stores in DX,AX register
+higherbyte -> DX
+lowerbyte -> AX
