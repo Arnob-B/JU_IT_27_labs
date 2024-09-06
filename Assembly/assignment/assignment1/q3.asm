@@ -9,7 +9,7 @@ main proc
   mov di, 0040H
   ; bl register will be used for holding the data
   ;counter
-  mov cx, 8 
+  mov cx, 0008h
 
   looping:
     mov bl , [si]
@@ -19,7 +19,8 @@ main proc
     inc di
   LOOP looping ; dec counter by 1 and check
 
-  mov ah, 04cH
+  mov ah, 03H
+  mov ah, 4cH
   int 21h
 main endp
 END

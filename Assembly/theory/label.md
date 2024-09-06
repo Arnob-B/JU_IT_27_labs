@@ -14,5 +14,9 @@ startingpoint : ; this is illegal
 ```asm
 LOOP <labelname>
 ```
-
 > decreases the cx register by 1 and checks if not equal to 0
+
+# Jumping 
+```asm
+jmp <labelname>
+```

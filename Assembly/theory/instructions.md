@@ -41,3 +41,8 @@ operand :-> memory variable,registers, constants
 while adding two 16 bit register or (register and memory pair)
 the carry in the half 8 bit is autmatically addjusted 
 for ex :-> if there is carry generated in B7 then it will be added to B8
+
+
+
+# MUL
+

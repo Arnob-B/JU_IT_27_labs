@@ -5,6 +5,7 @@
 |single char input|01|into al reg|
 |single char output|02|from dl reg|
 |string display|09|from dx reg|
+|before program terminate|03||
 |program terminate|4c||
 
 ### char display
