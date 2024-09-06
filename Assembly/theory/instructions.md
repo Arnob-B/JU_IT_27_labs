@@ -60,15 +60,18 @@ mul bx
 - lowerbyte -> AX
 
 # Div
+> dividend = divisor * quotient  + remainder
 ```asm
-div <source operand>
+div <divisor operand>
 ```
-source operand(s) : should be 8bit or 16bit register (memory is not allowed)
-#### 8bit register as source operand
+divisor operand(s) : should be 8bit or 16bit register (memory is not allowed)
+#### 8bit register as divisor operand
 > operation = AX/s
+- dividend -> AX (16 bit)
 - quotient -> al
 - remainder -> ah
-#### 16bit register as source operand
-> operation =( DX,AX )/ s
-- quotient -> ax
-- remainder -> dx
+#### 16bit register as divisor operand
+> operation -> (DX,AX)/s
+- dividend -> DX,AX (32 bit)
+- quotient -> AX
+- remainder -> DX
