@@ -66,9 +66,11 @@ div <source operand>
 source operand(s) : should be 8bit or 16bit register (memory is not allowed)
 #### 8bit register as source operand
 > operation = AX/s
+
 quotient -> al
 remainder -> ah
 #### 16bit register as source operand
 > operation =( DX,AX )/ s
+
 quotient -> ax
 remainder -> dx
