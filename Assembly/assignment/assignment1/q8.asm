@@ -15,7 +15,7 @@ main proc
   mov si, 0060h
   mov [si], ax
 
-  mov ah, 03h
+  int 03h
   mov ah, 4ch
   int 21h
 main endp

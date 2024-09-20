@@ -11,11 +11,11 @@ main proc
   div bx; q in ax , r in dx
 
   mov si, 0060h
-  mov [si], ax
+  mov [si], ax; quotient
   add si, 02h
-  mov [si], dx
+  mov [si], dx; remainder
 
-  mov ah, 03h
+  int 03h
   mov ah, 4ch
   int 21h
 main endp

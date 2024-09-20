@@ -1,4 +1,5 @@
 .model small
+.stack 100h
 .code
 main proc
   mov ax, 3000h
