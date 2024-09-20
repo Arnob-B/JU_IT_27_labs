@@ -1,33 +1,27 @@
 .model small
+.stack 100h
 .code
 main proc
   mov ax, @data
   mov ds , ax
-  ; used to store the source address
   mov si, 0030H
-  ; used to store the destination address
-  mov di, 0050H; bl register will be used for holding the data
-  mov bl , 00h;
-  mov [di],bl; making their initial values 0
-  inc di
-  mov [di],bl
-  dec di
+  mov ax, 0000H
   
   ;counter
-  mov cx, 7 
+  mov cx, 0007H
 
   looping:
-    mov bl , [si]
-    add [di], bl
-    mov bl,00h;
-    adc bl,bl
-    inc di
-    add [di],bl
-    dec di
-    ;moving the source address one bit ahead
-    inc si
+  add al, [si]
+  jnc exit
+  inc ah
+  exit:
+  inc si
   LOOP looping ; dec counter by 1 and check
+  
+  mov si, 0050h
+  mov [si], ax
 
+  int 03h
   mov ah, 04cH
   int 21h
 main endp

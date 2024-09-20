@@ -1,5 +1,5 @@
 .MODEL SMALL
-
+.STACK 100H
 .CODE
   MAIN PROC
     MOV AX,@DATA
@@ -7,24 +7,25 @@
     MOV CL, 00H
     ; STORING  0030H
     MOV SI , 0030H
-    MOV AL, [SI]
+    MOV BL, [SI]
     ;STORING 0040H
     MOV SI, 0040H
-    MOV BL, [SI]
+    MOV AL, [SI]
     ;MAKING 2'S COMPLIMENT OF AL
     ;NEG AL
-    NOT AL
-    INC AL
+    NOT BL
+    INC BL
     ;ADDITION
     ADD AL, BL
 
-    JC L1
+    CMC
+    ADC CL, CL
+
+    JNC L1
     ;answer is -ve and res is 2's comp of al 
     NOT AL
     INC AL
     L1:
-      CMC; TO COMPLIMENT THE CARRY
-      ADC CL, CL
       MOV SI, 0050H
       MOV [SI],AL
       MOV SI, 0051H
