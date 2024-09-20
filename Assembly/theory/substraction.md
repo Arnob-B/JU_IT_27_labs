@@ -7,6 +7,9 @@ code for 2's compliment
 not reg; 1's compliment
 inc reg
 ```
+```asm
+neg reg
+```
 ## using 2's compliment method
 general theory :-> 
  for a-b
@@ -16,7 +19,6 @@ general theory :->
  else 
  - the result is negative and is in 2's compliment form
 ```asm
-main proc
 mov ax,0000h
 mov al, 01h
 mov bl, 01h
@@ -44,7 +46,6 @@ general theory :->
  else 
  - the result is negative and is in 1's compliment form
 ```asm
-main proc
 mov ax,0000h
 mov al, 01h
 mov bl, 01h
