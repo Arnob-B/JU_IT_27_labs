@@ -1,5 +1,6 @@
 # Binary substractions
 > 2's compliment :-> 1's compliment + 1
+
 > fun fact 2's compliment is used to denote -ve numbers
 
 code for 2's compliment
