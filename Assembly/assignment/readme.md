@@ -16,7 +16,7 @@
 11. Write an Assembly Language Program to divide 2222H by 55H. Store the quotient from DS: 0060H and remainder in DS: 0062H.[soln](./assignment1/q11.asm)
 ---
 # Assignment 2
-1. Write an Assembly Language Program to count the number of occurrence of 55H in a string of eight data bytes. The starting address of string is DS: 0030H. Store the count value in DS:0040H.[soln using scasb](./assignment2/1_using_scasb.asm)[soln using cmp](./assignment2/1_using_cmp.asm)
+1. Write an Assembly Language Program to count the number of occurrence of 55H in a string of eight data bytes. The starting address of string is DS: 0030H. Store the count value in DS:0040H.[soln using scasb](./assignment2/1_using_scasb.asm),[soln using cmp](./assignment2/1_using_cmp.asm)
 2. Write an Assembly Language Program to find out the location where 55H is placed in a string of eight data bytes. The starting address of string is DS: 0030H.[soln](./assignment2/2.asm)
 3. Write an Assembly Language Program to compare two strings. The first string is stored from memory location DS: 0030H and the second sting is stored from DS: 0040H. Consider that the first byte of both strings contain the number of bytes contained in that string. If both strings are found equal, then show a value FFFFH in address DS: 0050H, otherwise show 1111H. [soln](./assignment2/3.asm)
 4. Write an Assembly Language Program to check if a string of five data bytes is palindrome or not. The string is stored from memory location DS: 0030H. If the string is found to be palindrome then place FFFFH in addresses DS: 0040H otherwise place 1111H.[soln](./assignment2/4.asm)
