@@ -28,3 +28,16 @@ cx -> counter register to store the no of repitition
   cld
   rep movsb
 ```
+
+# scas
+compare string with regiters and increases the index register (depending on the direction flag)
+> data should be present in ES:DI
+scasb :-> AL
+scasw :-> AX
+
+# cmps
+compare string in memory with another string in memory and increases the index registers (depending on the flags)
+> data should be present in ES:DI and DS:SI
+cmpsb : byte comparison
+cmpsw : word comparison
+
