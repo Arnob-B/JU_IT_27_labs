@@ -25,7 +25,7 @@ cmp ah, al
 
 ## ROR 
 > [!IMPORTANT]
-> LSB wraps -> MSB <br></br>
+> LSB wraps -> MSB__ 
 > CF takes -> LSB
 
 # Rotation with carry 
