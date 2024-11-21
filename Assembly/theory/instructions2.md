@@ -14,7 +14,7 @@ cmp ah, al
 
 
 # rotations
-> [!IMPORTANT]
+> [!WARNING]
 > in each rotation CF gets effected
 > ie if rot with 3h then each rotation will have their own CF states
 
