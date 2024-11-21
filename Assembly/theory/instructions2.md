@@ -2,6 +2,9 @@
 > [!IMPORTANT]
 > adjust decimal of AL after addition done anywhere
 
+> [!CAUTION]
+> does not work well with inc operation</br>
+> suggested to use add operation before DAA to get accurate result
 
 # cmp
 > [!IMPORTANT]
