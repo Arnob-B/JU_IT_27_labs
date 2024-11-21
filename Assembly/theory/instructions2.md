@@ -15,12 +15,12 @@ cmp ah, al
 
 # rotations
 > [!WARNING]
-> in each rotation CF gets effected
+> in each rotation CF gets effected</br>
 > ie if rot with 3h then each rotation will have their own CF states
 
 ## ROL 
 > [!IMPORTANT]
-> MSB wraps -> LSB
+> MSB wraps -> LSB</br>
 > CF takes -> MSB
 
 ## ROR 
@@ -31,12 +31,12 @@ cmp ah, al
 # Rotation with carry 
 ## RCL
 > [!IMPORTANT]
-> LSB wraps -> PREVIOUS CF
+> LSB wraps -> PREVIOUS CF </br>
 > MSB moves to -> CF
 
 ## RCR 
 > [!IMPORTANT]
-> MSB wraps -> previous CF
+> MSB wraps -> previous CF</br>
 > LSB moves -> CF
 
 
