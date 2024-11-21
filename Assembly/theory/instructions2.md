@@ -1,3 +1,8 @@
+# DAA
+> [!IMPORTANT]
+> adjust decimal of AL after addition done anywhere
+
+
 # cmp
 > [!IMPORTANT]
 > changes flag, sign , carry flag
