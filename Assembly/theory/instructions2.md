@@ -2,13 +2,15 @@
 > [!IMPORTANT]
 > adjust decimal of AL after addition done anywhere
 
+add 06h to lower 4 bits if AC is set to 1 or lower 4 bits > 9h
+add 06h to higer 4 bits if CF is set to 1 or higher 4 bits > 9h
 > [!CAUTION]
 > does not work well with INC operation</br>
 > suggested to use ADD operation before DAA to get accurate result
 
 # cmp
 > [!IMPORTANT]
-> changes flag, sign , carry flag
+> changes zero flag, sign , carry flag
 
 
 ```asm
@@ -53,6 +55,10 @@ cmp ah, al
 > no wraping 
 > carry flag gets affected
 
+```asm
+shr dest, count
+shl dest, count
+```
 
 
 # AAD

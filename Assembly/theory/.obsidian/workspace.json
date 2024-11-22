@@ -14,11 +14,23 @@
               "type": "markdown",
               "state": {
                 "file": "instructions2.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "instructions2"
+            }
+          },
+          {
+            "id": "49eda6e7bb91770d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-11-22 18.57.06.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2024-11-22 18.57.06.excalidraw"
             }
           },
           {
@@ -169,13 +181,19 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "7a27c9b37fc89c63",
   "lastOpenFiles": [
-    "instructions.md",
+    "Excalidraw/Drawing 2024-11-22 18.57.06.excalidraw.md",
     "instructions2.md",
+    "stringInstruction.md",
+    "todos.md",
+    "Excalidraw",
+    "overFlow.md",
+    "instructions.md",
     "indexBasePairs.md",
     "boiler.md",
     "data.md",
