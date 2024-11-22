@@ -52,7 +52,7 @@ Write an Assembly language Program to generate the first ten elements of this se
 1. Write an Assembly Language Program to add 3 X 3 matrices. Assume the matrices
 are stored in the form of lists (row wise). First matrix is stored from DS:0030H and
 the second matrix is stored from DS:0040.Store the result of the addition in the third
-lists starting from DS:0050H.
+lists starting from DS:0050H.[soln](./assignment4/1.asm)
 2. Write an Assembly Language Program to convert an eight bit binary number stored in
 DS:0030H into its equivalent BCD number. Stored the result in DS:0040H.[soln](./assignment4/2.asm)
 3. Write an Assembly program to convert a BCD number stored in DS:0030H into its
