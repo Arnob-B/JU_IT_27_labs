@@ -22,9 +22,9 @@
 4. Write an Assembly Language Program to check if a string of five data bytes is palindrome or not. The string is stored from memory location DS: 0030H. If the string is found to be palindrome then place FFFFH in addresses DS: 0040H otherwise place 1111H.[soln](./assignment2/4.asm)
 5. Write an Assembly Language Program to count the number of positive and negative numbers present in a series of eight data bytes. The starting address of the series is DS: 0040H. Store the count value of positive number in DS: 0040H and count value of negative number in DS: 0041H.[soln](./assignment2/5.asm)
 6. Write an Assembly Language Program to separate the odd and even numbers from a series of 7 data bytes. The starting address of the series is DS: 0030H. Store the even numbers from DS: 0040H and the odd numbers from DS: 0050H.[soln](./assignment2/6.asm)
-7. Write an Assembly Language Program to convert an 8-bit number stored in DS: 0030H into its equivalent ASCII value. Store the converted code from DS: 0050H.
+7. Write an Assembly Language Program to convert an 8-bit number stored in DS: 0030H into its equivalent ASCII value. Store the converted code from DS: 0050H.[soln](./assignment2/7.asm)
 8. Write an Assembly Language Program to find out the square root of a number stored in DS: 0030H. Store the result in DS: 0040H.
-9. Fibonacci series is defined as:
+9. Fibonacci series is defined as:[soln](./assignment2/9.asm)
 > F(i) = F(i-1) + F(i-2); for all i >2 with F(1) = F(2) = 1
 Write an Assembly language Program to generate the first ten elements of this sequence and store them from DS: 0030H.
 ---
