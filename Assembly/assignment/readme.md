@@ -54,12 +54,12 @@ are stored in the form of lists (row wise). First matrix is stored from DS:0030H
 the second matrix is stored from DS:0040.Store the result of the addition in the third
 lists starting from DS:0050H.
 2. Write an Assembly Language Program to convert an eight bit binary number stored in
-DS:0030H into its equivalent BCD number. Stored the result in DS:0040H.
+DS:0030H into its equivalent BCD number. Stored the result in DS:0040H.[soln](./assignment4/2.asm)
 3. Write an Assembly program to convert a BCD number stored in DS:0030H into its
 equivalent hexadecimal number. Stored the result in DS:0040H.
 4. Write an Assembly program to convert a binary number stored in DS:0030H into its
-equivalent gray code. Stored the result in DS:0040H.
+equivalent gray code. Stored the result in DS:0040H.[soln](./assignment4/4.asm)
 5. Write an Assembly program to find the factorial of a number stored in DS:0030H.
-Stored the result in DS:0040H.
+Stored the result in DS:0040H.[soln](./assignment4/5.asm)
 
 

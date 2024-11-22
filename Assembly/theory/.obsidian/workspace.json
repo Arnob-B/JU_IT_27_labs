@@ -25,12 +25,14 @@
             "id": "49eda6e7bb91770d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-11-22 18.57.06.excalidraw.md"
+                "file": "instructions.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2024-11-22 18.57.06.excalidraw"
+              "icon": "lucide-file",
+              "title": "instructions"
             }
           },
           {
@@ -43,7 +45,8 @@
               "title": "New tab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,7 +188,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7a27c9b37fc89c63",
+  "active": "49eda6e7bb91770d",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2024-11-22 18.57.06.excalidraw.md",
     "instructions2.md",
