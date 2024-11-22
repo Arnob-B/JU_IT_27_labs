@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "e8442d59cce53903",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a80504dea1d622b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a27c9b37fc89c63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "instructions2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "instructions2"
+            }
+          },
+          {
+            "id": "5517e198e2bdd5c7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0e2238d2aa16ebb9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ae3b5f7d2e5722a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3a527f45d2f4ac8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "33fb68c2945475b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d5f0b57643027c32",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8572bdbf5bb2dcfd",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb30f534ae0199da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1558485e776200f3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "indexBasePairs.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for indexBasePairs"
+            }
+          },
+          {
+            "id": "67093eb22a8d6950",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "indexBasePairs.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from indexBasePairs"
+            }
+          },
+          {
+            "id": "c2b76b58e28c65b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "35330ae76002a5a1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "indexBasePairs.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of indexBasePairs"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7a27c9b37fc89c63",
+  "lastOpenFiles": [
+    "instructions.md",
+    "instructions2.md",
+    "indexBasePairs.md",
+    "boiler.md",
+    "data.md",
+    "label.md",
+    "substraction.md",
+    "subroutines.md",
+    "string.md",
+    "stack.md",
+    "squareroot.md"
+  ]
+}

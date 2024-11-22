@@ -45,3 +45,20 @@ cmp ah, al
 > no wraping 
 > carry flag gets affected
 
+
+
+# AAD
+
+ASCII adj after addition in AL
+> if CF is 1 after addition 
+> AH incremented by 1 
+> af flag set to 1 
+> af flag set to 1 
+
+> else
+> AH incremented by 0 
+> af flag set to 0 
+> af flag set to 0 
+
+in either of the case 
+> 4 to 7(most significant 4 bits) of the AL is set to 0

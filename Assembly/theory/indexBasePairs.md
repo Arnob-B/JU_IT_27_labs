@@ -5,4 +5,5 @@ for ex:
 mov di, 0030h
 mov [di], al
 ```
+
 > moves al to ds:di
