@@ -1,3 +1,11 @@
+# DAA
+> [!IMPORTANT]
+> adjust decimal of AL after addition done anywhere
+
+> [!CAUTION]
+> does not work well with INC operation</br>
+> suggested to use ADD operation before DAA to get accurate result
+
 # cmp
 > [!IMPORTANT]
 > changes flag, sign , carry flag
