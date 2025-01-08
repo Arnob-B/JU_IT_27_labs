@@ -37,7 +37,7 @@ There should be three constructors: (i) to initialize real and imaginary parts t
 imaginary part to 0 but to initialize the real part to user defined value; (iii) to initialize the real
 part and the imaginary part to user defined values.
 Also, write a main() function to (i) create two complex numbers 3+2i and 4-2i; (ii) to print the
-sum and product of those numbers.
+sum and product of those numbers.[sol](./assingment1/Sol5.java)
 
 6. Write a Java class “Employee” containing information name, id, address, salary etc. Write
 necessary constructor and read/write methods.
@@ -50,7 +50,7 @@ and print yearly expenditure for this department.
 7. Create an abstract class “Publication” with data members ‘noOfPages’, ‘price’, ‘publisherName’
 etc. with their accessor/modifier functions. Now create two sub-classes “Book” and “Journal”.
 Create a class Library that contains a list of Publications. Write a main() function and create
-three Books and two Journals, add them to library and print the details of all publications.
+three Books and two Journals, add them to library and print the details of all publications.(add userinput)
 
 8. Write a class for “Account” containing data members ‘accountNumber’, ‘holderName’,
 ‘balance’ and add constructors and necessary accessor/modifier functions for these data
