@@ -1,5 +1,6 @@
 # solutions to the Assignment 1
-*** C file to machine code conversion phase ***
+***C file to machine code conversion phase***
+
 > [!IMPORTANT]
 > source file (.c file) -> preprocessed  file(.i file) -> object file (.s file) -> asm file (.o file) -> linking to get Maching code (.out file)
 
@@ -52,6 +53,7 @@ gdb output
 
 #### entire execution of output file in gdb according to the question
 > answer of b -> break f1
+
 > answer of c  -> break b.c:10
 ```bash
 (gdb) break f1
@@ -165,8 +167,11 @@ Num     Type           Disp Enb Address            What
         breakpoint already hit 4 times
 ```
 > answer e -> 8 times 
+
 > answer f -> 4 times 
+
 > answer g -> info break <number>
+
 > answer h -> info breakpoints
 
 #### info about breakpoints
