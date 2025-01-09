@@ -2,7 +2,7 @@
 ***C file to machine code conversion phase***
 
 > [!IMPORTANT]
-> source file (.c file) -> preprocessed  file(.i file) -> object file (.s file) -> asm file (.o file) -> linking to get Maching code (.out file)
+> source file (.c file) -> preprocessed  file(.i file) -> asm file (.s file) -> object file (.o file) -> linking to get Maching code (.out file)
 
 
 > -I flag is used to include any header file ( just provide the location of the folder containing the header file)
