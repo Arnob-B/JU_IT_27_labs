@@ -36,7 +36,11 @@
 |ee.|wget|
 |ff.| curl|
 
+
 ### 2. Write the following socket programs in C/C++ for communicating between two machines (as client and server) connected in a network:
-a. Stream socket
-b. Datagram socket
-c. Raw/unnamed socket
+
+|Sl no|Command|Solution|
+|---|---|---|
+|a.| Stream socket|solutions|
+|b.| Datagram socket|solutions|
+|c.| Raw/unnamed socket| solutions|
