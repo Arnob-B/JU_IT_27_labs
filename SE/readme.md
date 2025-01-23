@@ -35,18 +35,18 @@ j.  Rerun the program.put a breakpoint at function f0. list 5 lines
 # assignment 2
 [soulution](./Assignments/assign2/solutions.md)
 
-a. Put a breakpoint in 1 st executable line of the
-innermost loop.
-b. If you run and continue ,how many times it is
-supposed to stop at breakpoint 1?
-c. How will you continue so that it stops at 1000 th
-iteration of innermost loop ?
-d. How you can condition your breakpoint , so that
-the loop stops at every 1000 th iteration of
-innermost loop ?
-e. Put a breakpoint in the 1 st line of outermost
-loop.
+a. Put a breakpoint in 1 st executable line of the innermost loop.
+
+b. If you run and continue ,how many times it is supposed to stop at breakpoint 1?
+
+c. How will you continue so that it stops at 1000th iteration of innermost loop ?
+
+d. How you can condition your breakpoint , so that the loop stops at every 1000 th iteration of innermost loop ?
+
+e. Put a breakpoint in the 1 st line of outermost loop.
+
 f. Disable breakpoint “1”
-g. Add a command to breakpoint 2 so that it prints
-the value of “i” at each hit.
+
+g. Add a command to breakpoint 2 so that it prints the value of “i” at each hit.
+
 h. Delete breakpoint 2.
