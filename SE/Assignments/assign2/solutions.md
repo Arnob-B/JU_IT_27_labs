@@ -1,7 +1,7 @@
 # prerequisite
-> **command <breakpoint no>** -> allows us to add automatically execute gdb commands on breakpoint hits
+> **command \<breakpoint no\>** -> allows us to add automatically execute gdb commands on breakpoint hits
 
-> break <no> <condition> -> allows us to perform the condition check at that break point hit and if the condition is true , the program gets hault
+> break \<no\> \<condition\> -> allows us to perform a condition check at that break point hit and if the condition is true , the program gets hault
 
 # Assignment 2
 #### compile and debugging
