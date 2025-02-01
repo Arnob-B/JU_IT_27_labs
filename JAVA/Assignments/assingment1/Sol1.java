@@ -1,8 +1,3 @@
-
-/**
- * 1
- */
-
 class Room {
   int height, width, breadth;
 

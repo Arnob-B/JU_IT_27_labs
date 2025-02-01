@@ -1,70 +1,87 @@
-import java.util.ArrayList;
-
-/**
- * Sol6
- */
 class Employee {
-  int id;
-  float sal;
-  String name, address;
+  private String name;
+  private int id;
+  private String address;
+  private double salary;
 
-  Employee(int id, float sal, String name, String address) {
-    this.id = id;
-    this.sal = sal;
+  public Employee(String name, int id, String address, double salary) {
     this.name = name;
+    this.id = id;
     this.address = address;
+    this.salary = salary;
   }
 
+  public double getSalary() {
+    return salary;
+  }
+
+  public String toString() {
+    return "ID: " + id + ", Name: " + name + ", Address: " + address + ", Salary: " + salary;
+  }
 }
 
 class Dept {
-  ArrayList<Employee> employees;
   private String name;
+  private String location;
+  private Employee[] employees;
   private int count;
 
-  Dept(String name) {
-    this.employees = new ArrayList<>();
-    this.count = 0;
+  public Dept(String name, String location, int capacity) {
     this.name = name;
+    this.location = location;
+    this.employees = new Employee[capacity];
+    this.count = 0;
   }
 
-  int findIndex(int eId) {
-    for (int i = 0; i < employees.size(); i++) {
-      if (employees.get(i).id == eId)
-        return i;
+  public void add(Employee employee) {
+    if (count < employees.length) {
+      employees[count++] = employee;
     }
-    return -1;
   }
 
-  boolean add(Employee emp) {
-    if (findIndex(emp.id) != -1)
-      return false;
-    employees.add(emp);
-    return true;
+  public void remove(int id) {
+    for (int i = 0; i < count; i++) {
+      if (employees[i].toString().contains("ID: " + id + ",")) {
+        employees[i] = employees[--count];
+        employees[count] = null;
+        break;
+      }
+    }
   }
 
-  boolean remove(int empId) {
-    int ind = findIndex(empId);
-    if (ind == -1)
-      return false;
-    employees.remove(ind);
-    return true;
+  public double calculateYearlyExpenditure() {
+    double total = 0;
+    for (int i = 0; i < count; i++) {
+      total += employees[i].getSalary();
+    }
+    return total * 12;
   }
 
+  public void printEmployees() {
+    for (int i = 0; i < count; i++) {
+      System.out.println(employees[i]);
+    }
+  }
 }
 
 public class Sol6 {
   public static void main(String[] args) {
-    Dept dept = new Dept("Information Technology");
-    dept.add(new Employee(1, 200, "Tp", "new zealand"));
-    dept.add(new Employee(2, 300, "Pp", "London"));
-    dept.add(new Employee(3, 400, "Bp", "Italy"));
-    dept.add(new Employee(4, 500, "Cp", "Zimbawe"));
-    dept.add(new Employee(5, 400, "Np", "Morroco"));
-    float sum = 0;
-    for (Employee emp : dept.employees) {
-      sum += emp.sal;
-    }
-    System.out.println("yearly expenditure is " + sum * 12);
+    Dept itDept = new Dept("Information Technology", "Building A", 10);
+
+    Employee emp1 = new Employee("Alice", 1, "123 Street", 5000);
+    Employee emp2 = new Employee("Bob", 2, "456 Avenue", 6000);
+    Employee emp3 = new Employee("Charlie", 3, "789 Boulevard", 7000);
+    Employee emp4 = new Employee("Diana", 4, "101 Road", 5500);
+    Employee emp5 = new Employee("Eve", 5, "202 Lane", 5200);
+
+    itDept.add(emp1);
+    itDept.add(emp2);
+    itDept.add(emp3);
+    itDept.add(emp4);
+    itDept.add(emp5);
+
+    itDept.printEmployees();
+
+    System.out.println("Yearly Expenditure: " + itDept.calculateYearlyExpenditure());
   }
 }

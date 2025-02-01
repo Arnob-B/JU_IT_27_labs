@@ -63,7 +63,8 @@ public class Sol15 {
           break;
       }
       System.out.print("press y to continue : ");
-      c = new Scanner(System.in).nextLine();
+      scan.nextLine(); // to catch the \n
+      c = scan.nextLine();
     }
     scan.close();
   }

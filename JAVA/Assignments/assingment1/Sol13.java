@@ -59,14 +59,15 @@ class Automobile {
     this.registrationNumber = registrationNumber;
     return this;
   }
-  public void show(){
+
+  public void show() {
     System.out.println("---- Automobile ----");
-  System.out.println("make -> "+ make);
-  System.out.println("type -> "+type);
-  System.out.println("maxSpeed -> "+maxSpeed);
-  System.out.println("price -> "+price);
-  System.out.println("mileage -> "+mileage);
-  System.out.println("registrationNumber -> "+registrationNumber);
+    System.out.println("make -> " + make);
+    System.out.println("type -> " + type);
+    System.out.println("maxSpeed -> " + maxSpeed);
+    System.out.println("price -> " + price);
+    System.out.println("mileage -> " + mileage);
+    System.out.println("registrationNumber -> " + registrationNumber);
   }
 }
 
@@ -93,17 +94,18 @@ class Car extends Automobile {
   public int getSeatingCapacity() {
     return seatingCapacity;
   }
+
   @Override
-  public void show(){
+  public void show() {
     System.out.println("---- Car ----");
-  System.out.println("make -> "+ getMake());
-  System.out.println("type -> "+getType());
-  System.out.println("maxSpeed -> "+getMaxSpeed());
-  System.out.println("price -> "+getPrice());
-  System.out.println("mileage -> "+getMileage());
-  System.out.println("registrationNumber -> "+getRegistrationNumber());
-  System.out.println("No of doors -> "+ noOfDoors);
-  System.out.println("seatingCapacity -> "+ seatingCapacity);
+    System.out.println("make -> " + getMake());
+    System.out.println("type -> " + getType());
+    System.out.println("maxSpeed -> " + getMaxSpeed());
+    System.out.println("price -> " + getPrice());
+    System.out.println("mileage -> " + getMileage());
+    System.out.println("registrationNumber -> " + getRegistrationNumber());
+    System.out.println("No of doors -> " + noOfDoors);
+    System.out.println("seatingCapacity -> " + seatingCapacity);
 
   }
 }
@@ -138,18 +140,19 @@ class Track extends Automobile {
   public String getHoodType() {
     return hoodType;
   }
+
   @Override
-  public void  show(){
+  public void show() {
     System.out.println("---- Track ----");
-    System.out.println("make -> "+ getMake());
-    System.out.println("type -> "+getType());
-    System.out.println("maxSpeed -> "+getMaxSpeed());
-    System.out.println("price -> "+getPrice());
-    System.out.println("mileage -> "+getMileage());
-    System.out.println("registrationNumber -> "+getRegistrationNumber());
-    System.out.println("No of doors -> "+ capacity);
-    System.out.println("No of wheels -> "+ noofWheels);
-    System.out.println("Hood Type -> "+ hoodType);
+    System.out.println("make -> " + getMake());
+    System.out.println("type -> " + getType());
+    System.out.println("maxSpeed -> " + getMaxSpeed());
+    System.out.println("price -> " + getPrice());
+    System.out.println("mileage -> " + getMileage());
+    System.out.println("registrationNumber -> " + getRegistrationNumber());
+    System.out.println("No of doors -> " + capacity);
+    System.out.println("No of wheels -> " + noofWheels);
+    System.out.println("Hood Type -> " + hoodType);
   }
 }
 

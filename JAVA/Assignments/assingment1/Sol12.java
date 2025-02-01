@@ -1,80 +1,131 @@
-import java.io.ObjectInputStream.GetField;
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import javax.swing.text.html.HTMLDocument.Iterator;
-
-/**
- * Sol12
- */
 class Student {
-  String name;
-  int roll_no;
-  String sub[];
+    private String name;
+    private int rollNo;
+    private String[] subjects;
 
-  Student(String name, int roll_no, String sub[]) {
-    this.sub = new String[5];
-    this.name = name;
-    this.roll_no = roll_no;
-    for (int i = 0; i < 5 && i < sub.length; i++) {
-      this.sub[i] = sub[i];
+    public Student(String name, int rollNo, String[] subjects) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.subjects = subjects;
     }
-  }
 
-  public String[] getSub() {
-    return sub;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public String getName() {
-    return name;
-  }
+    public int getRollNo() {
+        return rollNo;
+    }
 
-  public int getRoll_no() {
-    return roll_no;
-  }
-
-  public void setSub(String[] sub) {
-    this.sub = sub;
-  }
-
-  public void setRoll_no(int roll_no) {
-    this.roll_no = roll_no;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
+    public String[] getSubjects() {
+        return subjects;
+    }
 }
 
 class TabulationSheet {
-  HashMap<Integer, Integer> sheet;
+    private String subject;
+    private int[] rollNos;
+    private int[] marks;
+    private int count;
 
-  TabulationSheet() {
-    sheet = new HashMap<>();
-  }
+    public TabulationSheet(String subject, int capacity) {
+        this.subject = subject;
+        rollNos = new int[capacity];
+        marks = new int[capacity];
+        count = 0;
+    }
 
-  void addRoll(int roll,int marks) {
-    sheet.put(roll,marks);
-  }
-  int getMarks(int roll){
-    if(sheet.containsKey(roll))
-      return sheet.get(roll);
-    else return -1;
-  }
+    public void addMarks(int rollNo, int mark) {
+        if (count < rollNos.length) {
+            rollNos[count] = rollNo;
+            marks[count] = mark;
+            count++;
+        }
+    }
+
+    public int getMark(int rollNo) {
+        for (int i = 0; i < count; i++) {
+            if (rollNos[i] == rollNo) {
+                return marks[i];
+            }
+        }
+        return -1; 
+    }
+
+    public String getSubject() {
+        return subject;
+    }
 }
-class marksSheet{
-  Student student;
-  ArrayList<Integer> marks;
-  marksSheet(Student std){
-    student = std;
-  }
-  void addMarks(){
-    //??
-  }
 
+class MarkSheet {
+    private String studentName;
+    private String[] subjects;
+    private int[] marks;
+    private int count;
+
+    public MarkSheet(String studentName, int subjectCount) {
+        this.studentName = studentName;
+        subjects = new String[subjectCount];
+        marks = new int[subjectCount];
+        count = 0;
+    }
+
+    public void addMarks(String subject, int mark) {
+        if (count < subjects.length) {
+            subjects[count] = subject;
+            marks[count] = mark;
+            count++;
+        }
+    }
+
+    public void printMarkSheet() {
+        System.out.println("Marksheet for: " + studentName);
+        for (int i = 0; i < count; i++) {
+            System.out.println(subjects[i] + ": " + marks[i]);
+        }
+        System.out.println();
+    }
 }
 
 public class Sol12 {
+    public static void main(String[] args) {
+        String[] subjects = {"Math", "Physics", "Chemistry", "Biology", "English"};
 
+        Student[] students = {
+            new Student("John", 101, subjects),
+            new Student("Hammond", 102, subjects),
+            new Student("Jason", 103, subjects)
+        };
+
+        TabulationSheet[] tabSheets = new TabulationSheet[subjects.length];
+        for (int i = 0; i < subjects.length; i++) {
+            tabSheets[i] = new TabulationSheet(subjects[i], students.length);
+        }
+
+        int[][] marksData = {
+            {82, 90, 95},
+            {70, 88, 90},
+            {78, 84, 92},
+            {92, 95, 98},
+            {88, 99, 89}
+        };
+
+        for (int i = 0; i < subjects.length; i++) {
+            for (int j = 0; j < students.length; j++) {
+                tabSheets[i].addMarks(students[j].getRollNo(), marksData[i][j]);
+            }
+        }
+
+        MarkSheet[] markSheets = new MarkSheet[students.length];
+        for (int i = 0; i < students.length; i++) {
+            markSheets[i] = new MarkSheet(students[i].getName(), subjects.length);
+            for (TabulationSheet tabSheet : tabSheets) {
+                markSheets[i].addMarks(tabSheet.getSubject(), tabSheet.getMark(students[i].getRollNo()));
+            }
+        }
+
+        for (MarkSheet markSheet : markSheets) {
+            markSheet.printMarkSheet();
+        }
+    }
 }

@@ -32,6 +32,7 @@ j.  Rerun the program.put a breakpoint at function f0. list 5 lines
 > Explore : Complete this rerun. Now see what is the change in details
 > of breakpoint s by using command used in "h"
 
+<<<<<<< HEAD
 # assignment 2
 [soulution](./Assignments/assign2/solutions.md)
 
@@ -50,3 +51,6 @@ f. Disable breakpoint “1”
 g. Add a command to breakpoint 2 so that it prints the value of “i” at each hit.
 
 h. Delete breakpoint 2.
+=======
+
+>>>>>>> 920d776 (java assignemnt1)
