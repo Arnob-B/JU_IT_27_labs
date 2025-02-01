@@ -45,12 +45,12 @@ Create a class “Dept” that has a name, location etc. The “Dept” contains
 “Employee”. Write methods “add” and “remove” to add and remove an employee to/from this
 department.
 Write a main() function and create “Information Technology” department. Add five employees
-and print yearly expenditure for this department.
+and print yearly expenditure for this department.[sol](./assingment1/Sol6.java)
 
 7. Create an abstract class “Publication” with data members ‘noOfPages’, ‘price’, ‘publisherName’
 etc. with their accessor/modifier functions. Now create two sub-classes “Book” and “Journal”.
 Create a class Library that contains a list of Publications. Write a main() function and create
-three Books and two Journals, add them to library and print the details of all publications.(add userinput)
+three Books and two Journals, add them to library and print the details of all publications.(add userinput).[sol](./assingment1/Sol7.java)
 
 8. Write a class for “Account” containing data members ‘accountNumber’, ‘holderName’,
 ‘balance’ and add constructors and necessary accessor/modifier functions for these data
@@ -59,7 +59,7 @@ class. SavingsAccount will have a member variable ‘interestRate’ and member 
 ‘calculateYearlyInterest’. Write another class “Manager” that contains a list Account. Also write
 a main() function to create an instance of Manager class. Add two SavingsAccount and three
 CurrentAccount to Manager. Calculate interest of each SavingsAccount. Print the details of all
-accounts.
+accounts.[sol](./assingment1/Sol8.java)
 
 9. Implement a class for a “Person”. Person has data members ‘age’, ’weight’, ‘height’,
 ‘dateOfBirth’, ‘address’ with proper reader/write methods etc. Now create two subclasses
@@ -68,7 +68,7 @@ accounts.
 and methods ‘calculateGrade’. Again create two sub-classes “Technician” and “Professor” from
 Employee. Professor has data members ‘courses’, ‘listOfAdvisee’ and their add/remove
 methods. Write a main() function to demonstrate the creation of objects of different classes and
-their method calls.
+their method calls.[sol](./assingment1/Sol9.java)
 
 10. A bookshop maintains the inventory of books that are being sold at the shop. The list includes
 details such as author, title, publisher, cost and stock position. Whenever a customer wants a
@@ -77,7 +77,7 @@ whether it is available or not. If it is not, an appropriate message is displaye
 system displays the book details and details and requests for the number of copies required. If the
 required copies are available, the total cost of the requested copies is displayed, otherwise the
 message “requires copies not in stock” is displayed. Design a system using a class called “Book”
-with suitable member methods and constructors.
+with suitable member methods and constructors.[sol](./assingment1/Sol10.java)
 
 11. Implement a class for “Date”. Write member functions for (i) getting the previous day, (iv)
 getting the next day, (iii) printing a day
@@ -85,7 +85,7 @@ There should be four constructors: (i) day, month and year are initialized to 01
 is initialized to user specified value but month and year are initialized to 01, 1970; (iii) day,
 month are initialized to user specified value but year is initialized to 1970; (iv) day, month and
 year are initialized to user defined values.
-Also, write a main() function to (i) create a date object; (ii) print the next and the previous day.
+Also, write a main() function to (i) create a date object; (ii) print the next and the previous day.[sol](./assingment1/Sol11.java)
 
 12. Implement a class for a “Student”. Information about a student includes name, roll no and an array
 of five subject names. The class should have suitable constructor and get/set methods.
@@ -95,8 +95,7 @@ of a student.
 Implement a class “MarkSheet”. A mark sheet contains marks of all subjects for a particular
 student. This class should have a method to add name of a student and marks in each subject. 
 Write a main() function to create three “Student” objects, Five “Tabulationsheet” objects for Five
-subjects and three “Marksheet” object for three students. Print the mark sheets.
-> how will Marksheet class know the marks of the students
+subjects and three “Marksheet” object for three students. Print the mark sheets.[sol](./assingment1/Sol12.java)
 
 13. Create a base class “Automobile”. An Automobile contains data members ‘make’, ‘type’,
 ‘maxSpeed’, ‘price’, ‘mileage’, ‘registrationNumber’ etc. with their reader/writer methods. Now
@@ -108,8 +107,7 @@ methods. Create a main() function to demonstrate this.[sol](./assingment1/Sol13.
 Create an interface “Shape” that contains methods ‘area’, ‘draw’, ‘rotate’, ‘move’ etc. Now create
 two classes “Circle” and “Rectangle” that implement this ‘Shape’ interface and implement the
 methods ‘area’, ‘move’, etc. Write a main() function to create two “Circle” and three “Rectangle”,
-then move them. Print the details of circles and rectangles before after moving them. 
-> implementation of rotation is not done 
+then move them. Print the details of circles and rectangles before after moving them. [sol](./assingment1/Sol14.java)
 
 15. Imagine a toll booth and a bridge. Cars passing by the booth are expected to pay an amount of Rs.
 50/- as toll tax. Mostly they do but sometimes a car goes by without paying. The toll booth keeps
