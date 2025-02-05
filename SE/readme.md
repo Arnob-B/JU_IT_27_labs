@@ -32,7 +32,7 @@ j.  Rerun the program.put a breakpoint at function f0. list 5 lines
 > Explore : Complete this rerun. Now see what is the change in details
 > of breakpoint s by using command used in "h"
 
-<<<<<<< HEAD
+
 # assignment 2
 [soulution](./Assignments/assign2/solutions.md)
 
@@ -51,6 +51,19 @@ f. Disable breakpoint “1”
 g. Add a command to breakpoint 2 so that it prints the value of “i” at each hit.
 
 h. Delete breakpoint 2.
-=======
 
->>>>>>> 920d776 (java assignemnt1)
+
+# assignment 3
+[solutions](./Assignments/assign3/SEassignment3.pdf)
+1. Consider the program in Assign3.It is a simple state machine.
+        a. Put a breakpoint in line 49
+        b. Try next command
+        c. How will you get inside the function without using breakpoint?
+        d. How will you come out the of the function without using next and continue?
+
+2. Consider the program in Assign4 .It is also a simple state machine.If you provide user id and password properly  account details will be displayed. The basic rule is user id should be positive and less than 20 .password is userid *b1000 .The loop will terminate after 10 iteration. It works fine if you provide valid user  id and password.It works fine for invalid userid. But it goes to infiniteloop for invalid password.Run the program .It goes into infinite loop.you need to kill the program by [ctrl^c]
+        a. Set a suitable breakpoint in gdb in the routine show.give valid input and run :
+        b. How you can see the call stack of the routine. 
+        c. Which commands will help you to see each value change of variable “event”?
+        d. Correct the program so that it doesn’t go to infinite loop for wrong password. Rather main iteration restarts .  [follow the value change path of event for wrong password]
+> Explore the commands found for 5c to see/use content of a pointer
