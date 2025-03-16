@@ -41,6 +41,6 @@
 
 |Sl no|Command|Solution|
 |---|---|---|
-|a.| Stream socket|solutions|
-|b.| Datagram socket|solutions|
+|a.| Stream socket|[solutions](./Solutions/programs/StreamSocket/Readme.md)|
+|b.| Datagram socket|[solutions](./Solutions/programs/DatagramSocket/Readme.md)|
 |c.| Raw/unnamed socket| solutions|
