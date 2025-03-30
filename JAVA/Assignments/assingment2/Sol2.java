@@ -1,42 +1,31 @@
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-
-import org.w3c.dom.events.Event;
-
 class SharedPrinter {
-  int current;
-  SharedPrinter(){
-    this.current = 1;
-  }
-  synchronized void  printOdd(){
+  boolean isOdd = true;
+  synchronized void  printOdd(int current){
     try{
-        Thread.sleep(500);
-        if(current%2 == 0){
-          wait();
-        }
-        System.out.print(current + ", ");
-        current++;
-        notify();
+      while(!isOdd ){
+        wait();
+      }
+      System.out.print(current + ", ");
+      Thread.sleep(500);
+      isOdd = false;
+      notify();
     }catch(Exception e){
       System.out.println(e);
     }
   }
-  synchronized void  printEven(){
+  synchronized void  printEven(int current){
     try{
-        Thread.sleep(500);
-        if(current%2 != 0){
+        while(isOdd){
           wait();
         }
         System.out.print(current + ", ");
-        current++;
+        Thread.sleep(500);
+        isOdd = true;
         notify();
     }
     catch(Exception e){
       System.out.println(e);
     }
-  }
-  synchronized int getCurrentValue(){
-    return current;
   }
 }
 class OddThread extends Thread {
@@ -49,8 +38,8 @@ class OddThread extends Thread {
   }
 
   public void run() {
-    while(printer.getCurrentValue() <= limit){
-      printer.printOdd();
+    for(int i =1;i<=limit;i+=2){
+      printer.printOdd(i);
     }
   }
 }
@@ -66,8 +55,8 @@ class EvenThread extends Thread {
 
 
   public void run() {
-    while(printer.getCurrentValue() <= limit){
-      printer.printEven();
+    for(int i =2;i<=limit;i+=2){
+      printer.printEven(i);
     }
   }
 }
