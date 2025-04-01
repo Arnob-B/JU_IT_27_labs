@@ -78,6 +78,7 @@ public class Sol2 {
     try{
       oddThread.join();
       evenThread.join();
+      System.out.println();
     }
     catch(Exception e){
       System.out.println(e);

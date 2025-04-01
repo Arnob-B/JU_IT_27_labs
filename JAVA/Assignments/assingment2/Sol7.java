@@ -49,6 +49,7 @@ class BinaryThread extends Thread {
     } else if (array[mid] < target) {
       binarySearch(mid + 1, e, i);
     } else {
+      System.out.println("found element by thread " + this.getId() + " at index " + mid);
       this.result.push(mid);
       return;
     }
@@ -62,7 +63,7 @@ class BinaryThread extends Thread {
 /**
  * Sol5
  */
-public class Sol6 {
+public class Sol7 {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);

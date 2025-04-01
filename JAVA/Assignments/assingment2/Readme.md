@@ -16,6 +16,6 @@
     4. Each thread searches the element e in its sub-array using binary search algorithm.
 [Sol](./Sol6.java)
 
-7. Write a Java program using threading technology and print the thread index and location where the element has been found.
+7. Write a Java program using threading technology and print the thread index and location where the element has been found.[sol](./Sol7.java)
 
 > again this question is same as question 6  
