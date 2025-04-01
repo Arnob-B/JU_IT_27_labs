@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class SharedPrinter {
   boolean isOdd = true;
   synchronized void  printOdd(int current){
@@ -63,7 +65,9 @@ class EvenThread extends Thread {
 
 public class Sol2 {
   public static void main(String[] args) {
-    int limit = 8;
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the limit : ");
+    int limit = scanner.nextInt();
     SharedPrinter printer = new SharedPrinter();
 
     EvenThread evenThread = new EvenThread(limit, printer);
@@ -77,6 +81,9 @@ public class Sol2 {
     }
     catch(Exception e){
       System.out.println(e);
+    }
+    finally{
+      scanner.close();
     }
   }
 }

@@ -1,6 +1,4 @@
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.util.Scanner;
 
 class FileHandler {
@@ -8,6 +6,7 @@ class FileHandler {
   int currentNumber = -1;
   long sum = 0;
   boolean toSum = false;
+  boolean isComplete = false;
 
   FileHandler(String location) {
     file = new File(location);
@@ -15,13 +14,12 @@ class FileHandler {
   }
 
   void findNum() {
-    try {
-      Scanner reader = new Scanner(file);
-      while (true) {
+    try (Scanner reader = new Scanner(file)) {
+      while (!isComplete) {
         Thread.sleep(100);
         if (!toSum) {
           if (!reader.hasNextLine()) {
-            reader.close();
+            isComplete = true;
             return;
           }
           String data = reader.nextLine();
@@ -37,7 +35,7 @@ class FileHandler {
 
   void doSum() {
     try {
-      while (true) {
+      while (!isComplete) {
         Thread.sleep(100);
         if (toSum) {
           sum += currentNumber;
@@ -48,6 +46,10 @@ class FileHandler {
     } catch (Exception ecp) {
       System.out.println(ecp);
     }
+  }
+
+  long getSum() {
+    return sum;
   }
 }
 
@@ -62,5 +64,12 @@ public class Sol4 {
     });
     t1.start();
     t2.start();
+    try {
+      t1.join();
+      t2.join();
+      System.out.println("final sum is " + f.getSum());
+    } catch (Exception e) {
+      System.out.println(e);
+    }
   }
 }

@@ -1,8 +1,7 @@
 # Assignment 2
 1. Write a program to create two threads. Print “In main thread” in main thread and “In child thread” in child thread.[sol](./Sol1.java)
 
-2. Create two threads and call them EvenThread and OddThread. EvenThread will print number as 2 4 6 8 10... and Odd Thread will print number as 1 3 5.... Now, synchronize these two threads to get the output as:
-1 2 3 4 5 6 7 8.
+2. Create two threads and call them EvenThread and OddThread. EvenThread will print number as 2 4 6 8 10... and Odd Thread will print number as 1 3 5.... Now, synchronize these two threads to get the output as: 1 2 3 4 5 6 7 8. [sol](./Sol2.java)
 
 3. Consider the following series x = 1+1/1! +1/2! + 1/3! + .........1/10! . Create two threads t1 & t2. t1 will generate the denominators and t2 will form the term and add them up. Finally print the result.[Sol](./Sol3.java)
 

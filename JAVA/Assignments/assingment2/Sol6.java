@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Result {
   int arr[];
   int curIndex = -1;
@@ -17,8 +19,9 @@ class Result {
     } else {
       System.out.println("element found at index ");
       for (int i = 0; i <= curIndex; i++) {
-        System.out.print(arr[i] + ", ");
+        System.out.print(arr[i] + ((i != curIndex) ? ", " : ""));
       }
+      System.out.println();
     }
   }
 }
@@ -63,9 +66,20 @@ class BinaryThread extends Thread {
 public class Sol6 {
 
   public static void main(String[] args) {
-    int n = 20;
-    int arr[] = { 1, 2, 3, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
-    int target = 20;
+    Scanner scanner = new Scanner(System.in);
+    int n = 1;
+    while (n % 10 != 0) {
+      System.out.print("Enter the limit (multiple of 10) : ");
+      n = scanner.nextInt();
+    }
+    int arr[] = new int[n];
+    System.out.print("enter the array of " + n + " elements : ");
+    for (int i = 0; i < n; i++) {
+      arr[i] = scanner.nextInt();
+    }
+    System.out.print("enter the target : ");
+
+    int target = scanner.nextInt();
 
     int noOfThreads = n / 10;
     Result result = new Result(n);
@@ -83,6 +97,8 @@ public class Sol6 {
       result.Print();
     } catch (Exception err) {
       System.out.println(err);
+    } finally {
+      scanner.close();
     }
   }
 }

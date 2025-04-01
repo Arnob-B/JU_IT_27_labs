@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class OddSeqGenerator extends Thread {
   int boundary = 0;
   int sum = 0;
@@ -48,7 +50,9 @@ class EvenSeqGenerator extends Thread {
 public class Sol5 {
 
   public static void main(String[] args) {
-    int n = 100;
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the limit : ");
+    int n = scanner.nextInt();
     OddSeqGenerator oddThread = new OddSeqGenerator(n);
     EvenSeqGenerator evenThread = new EvenSeqGenerator(n);
     oddThread.start();
@@ -62,6 +66,8 @@ public class Sol5 {
       System.out.println("final sum " + sum);
     } catch (Exception err) {
       System.out.println(err);
+    } finally {
+      scanner.close();
     }
   }
 }
