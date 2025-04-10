@@ -1,6 +1,13 @@
-class FrequencyCounter {
+class FrequencyCounter<T> {
 
-  public static <T> void findFrequencies(T[] array) {
+  T[] array;
+
+  FrequencyCounter(T[] array) {
+    this.array = array;
+
+  }
+
+  public void findFrequencies() {
     boolean[] visited = new boolean[array.length];
 
     for (int i = 0; i < array.length; i++) {
@@ -26,13 +33,14 @@ public class Sol2 {
   public static void main(String[] args) {
     // Integer
     Integer[] intArray = { 1, 2, 2, 3, 1, 4, 2 };
+    FrequencyCounter<Integer> fc1 = new FrequencyCounter<Integer>(intArray);
     System.out.println("Integer Array Frequencies:");
-    FrequencyCounter.findFrequencies(intArray);
+    fc1.findFrequencies();
 
     // String
     String[] strArray = { "apple", "banana", "apple", "cherry", "banana", "apple" };
+    FrequencyCounter<String> fc2 = new FrequencyCounter<String>(strArray);
     System.out.println("\nString Array Frequencies:");
-    FrequencyCounter.findFrequencies(strArray);
-
+    fc2.findFrequencies();
   }
 }
