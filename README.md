@@ -16,10 +16,10 @@
 
 # 📁 Lab Files
 
-📂 Semester 5
+📂 Semester 5 <br>
 ┣ 📜 [cloud computing](./semester-5/cloud/readme.md)<br>
-┣ 📜 [operating systems](./semester-5/os/readme.md)<br
-┗ 📜 [compiler](./semester-5/compiler/readme.md)<br
+┣ 📜 [operating systems](./semester-5/os/readme.md)<br>
+┗ 📜 [compiler](./semester-5/compiler/readme.md)<br>
 
 
 
