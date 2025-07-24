@@ -1,8 +1,11 @@
-our assignment involves using 3 languages
+our assignment involves the use of 3 languages
 1. bash or shell scripting 
 2. python
 3. c 
 
+# templates for each of them
+> [!IMPORTANT]
+> u should strictly follow them
 
 # bash or shell script 
 ``` shell

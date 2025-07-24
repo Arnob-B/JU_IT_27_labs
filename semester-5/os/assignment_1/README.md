@@ -1,6 +1,6 @@
 # 🎓 Assignment 1
 
-Welcome to the repository for **Assignment 1A** and **Assignment 1B** for os 27.  
+**Assignment 1A** and **Assignment 1B** for os 27.  
 Click on each section to access details, guidelines, and file formats
 
 > [!IMPORTANT]
@@ -44,7 +44,5 @@ Make sure your filenames follow the correct [file format](./../file_format.md) a
 ## 🙏 Star This Repo
 
 If you find this helpful, give this repo a ⭐ and share it with your friends!
-
-![Cat Star Meme](https://media.tenor.com/I6kN-6X7nhAAAAAj/cat-space.gif)
 
 ---

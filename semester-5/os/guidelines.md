@@ -11,7 +11,7 @@
 Example:- A2_07_2.c, A1_11_7.py, A1_02_1A.sh
 ```
 
-5. ==Please note that never upload a Zip/docx/pdf file.==
+5. Please note that never upload a Zip/docx/pdf file.
 6. The type of the file should be pure plain ASCII Text.
 7. While coding, always use indentation of 4 spaces.
 8. Blocks of code should be separated by a newline.
