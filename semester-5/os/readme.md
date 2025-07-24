@@ -1,6 +1,10 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=4ADE80&center=true&vCenter=true&multiline=true&width=600&lines=COMMING+SOON" alt="Typing SVG" />
-</p>
-<p align="center">
-  <img src="https://media1.tenor.com/m/c5nS7cjT5ZAAAAAd/turtle-dog.gif" width="400" alt="comming soon" />
-</p>
+[gdrive link for all the assignments](https://drive.google.com/drive/folders/1azHNIXHWhLSL-zZFfB6llLDwalCrfG-j)
+
+📂 OOS <br>
+┣ 📂 [Assignment_1](./assignment_1/README.md)<br>
+┣ 📌 [guidelines](./guidelines.md)<br>
+┗ 🗃️ [file formats](./file_format.md)<br>
+
+> [!IMPORTANT]
+> it is important to note that since we are doing grp assignments and plagarism is strictly prohibited, so i cant share the exact code i used 😥
+> dont be sad , i will give in depth explanation of each assignments so that u will be able to do it on ur own.
