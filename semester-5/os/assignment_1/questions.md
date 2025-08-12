@@ -90,3 +90,29 @@ does not already exist. If name does exist in the environment, then its value is
 if overwrite is nonzero; if overwrite is zero, then the value of name is not changed (and
 setenv() returns a success status).
 > Note: make sure you don't modify the already generated system’s environment variable like HOME, HOST etc.
+
+
+
+# ASSIGNMENT – 3
+### Total Marks - 10 [CO4]
+### Parallel Programming in Python
+
+- The objective of this assignment is to write a parallel program in Python which will do Matrix Multiplication between two large Square Matrices with unsigned integer elements. 
+- You have to also measure the time elapsed.
+- The Matrix should be large enough (at least 3000 x 3000) and dynamically allocated to fit in your computer memory.
+- Both the Matrices need to be
+- initialized with random numbers (‘mod’ to some value).
+- As you increase the number of Parallel Threads (max to your number of CPUs), your timing should show improvement.
+- Use time.perf_counter() or an equivalent high-resolution timer to note down the timing.
+- Make sure you attach the timing to the starting comment block of your source file.
+- Your time should not include the Matrices initialization time.
+- You are not allowed to use Python’s threading module. You can import the package “multiprocessing” for this purpose.
+- Also, use proper command to show CPU utilization(cpustat or sar) and attach these outputs to the starting comment block of your source file.
+- This program should take four command line arguments. The first
+  - Argument is the dimension of the Square Matrix.
+  - The second argument is about the number of Parallel Threads. For
+  - example, the value of the second argument will be 1, 2, 3, 4 etc.; signifying
+  ### how the workload will be split among all the CPUs.
+  - The third argument will be the value of the ‘mod’ which will be used to initialize all the elements of two input square matrices.
+  - The fourth (last) argument will be the print_switch.
+  - If its value is ‘1’, both the Input and Output Matrices and as well as the Result Matrix will be printed on the screen. In case the value is ‘0’, Matrices won’t be printed on the screen.
