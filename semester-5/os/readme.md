@@ -2,6 +2,8 @@
 
 📂 OOS <br>
 ┣ 📂 [Assignment_1](./assignment_1/README.md)<br>
+┣ 📂 [Assignment_2](./assignment_2/README.md)<br>
+┣ 📂 [Assignment_4](./assignment_4/README.md)<br>
 ┣ 📌 [guidelines](./guidelines.md)<br>
 ┗ 🗃️ [file formats](./file_format.md)<br>
 
